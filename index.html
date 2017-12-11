@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Basic GraphQL Server With Node, Express and MongoDB</title>
+</head>
+<body>
+<h1>Super Basic GraphQL Server With Node, Express and MongoDB</h1>
+<h2>This is just a normal POST</h2>
+<div>Enter a new item in the text box and hit Submit to save it to the database</div>
+<form action="/todos" method="POST">
+    <input type="text" placeholder="item description" name="description">
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<h2>GraphQL Test</h2>
+<hr>
+<div>
+    <a href="/graphql?query={todo(id:1){id,description}}">GraphQL Test(Click here to query todos)</a>
+</div>
+</body>
+</html>
